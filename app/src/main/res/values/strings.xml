@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyToolBar</string>
+    <string name="btnSave">Сохранить заметку</string>
+    <string name="hint">Создате заметку</string>
+
+    <string name="hintInMoney">Введите сумму</string>
+    <string name="hintPaymen">Информация об оплате</string>
+    <string name="BtnOk">Оплатить</string>
+    <string name="CheckKarta">Банковская карта</string>
+    <string name="CheckPhone">Мобильный телефон</string>
+    <string name="CheckMoney">Наличными по адресу</string>
+
+    <string name="btnStart">Установить время начала задачи</string>
+    <string name="btnEnd">Установить время окончания задачи</string>
+    <string name="btnOk">Вывести информацию</string>
+</resources>

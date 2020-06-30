@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="22dp"
+        android:hint="@string/hintInMoney"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/infoPayment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/infoPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:hint="@string/hintPaymen"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/checkKarta"
+        app:layout_constraintStart_toStartOf="@+id/inMoney"
+        app:layout_constraintTop_toBottomOf="@+id/inMoney" />
+
+    <CheckBox
+        android:id="@+id/checkKarta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/CheckKarta"
+        app:layout_constraintBottom_toTopOf="@+id/checkPfone"
+        app:layout_constraintStart_toStartOf="@+id/infoPayment"
+        app:layout_constraintTop_toBottomOf="@+id/infoPayment" />
+
+    <CheckBox
+        android:id="@+id/checkPfone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/CheckPhone"
+        app:layout_constraintBottom_toTopOf="@+id/checkMoney"
+        app:layout_constraintStart_toStartOf="@+id/checkKarta"
+        app:layout_constraintTop_toBottomOf="@+id/checkKarta" />
+
+    <CheckBox
+        android:id="@+id/checkMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:text="@string/CheckMoney"
+        app:layout_constraintBottom_toTopOf="@+id/btnOK"
+        app:layout_constraintStart_toStartOf="@+id/checkPfone"
+        app:layout_constraintTop_toBottomOf="@+id/checkPfone" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/BtnOk"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkMoney" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
